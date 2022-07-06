@@ -3,13 +3,13 @@
 
 format: jb-book
 root: intro
-options:  # The options key will be applied to all chapters, but not sub-sections
-  numbered: True
-chapters:
-- file: 01-linear-algebra/index    
-- file: 02-calculus/index
-- file: 03-probability/index
-- file: 04-statistics/index
-- file: 05-algorithms/index
-- file: 06-optimization/index    
-
+parts:
+  - caption: Linear Algebra
+    numbered: True
+    maxdepth: 2
+    chapters:
+    - file: 01-linear-algebra/01-data-structures/index 
+    - file: 01-linear-algebra/02-operations/index 
+    - file: 01-linear-algebra/03-matrix-properties/index 
+    - file: 01-linear-algebra/04-eigendecomposition/index 
+    - file: 01-linear-algebra/05-matrix-operations-for-ml/index     
