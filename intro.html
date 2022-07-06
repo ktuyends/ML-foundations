@@ -89,7 +89,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="1. Linear Algebra" href="01-linear-algebra/index.html" />
+    <link rel="next" title="1. Data Structures for Algebra" href="01-linear-algebra/01-data-structures/index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -141,35 +141,35 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Linear Algebra
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="01-linear-algebra/index.html">
-   1. Linear Algebra
+  <a class="reference internal" href="01-linear-algebra/01-data-structures/index.html">
+   1. Data Structures for Algebra
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="02-calculus/index.html">
-   2. Calculus
+  <a class="reference internal" href="01-linear-algebra/02-operations/index.html">
+   2. Common Tensor Operations
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="03-probability/index.html">
-   3. Probability
+  <a class="reference internal" href="01-linear-algebra/03-matrix-properties/index.html">
+   3. Matrix Properties
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="04-statistics/index.html">
-   4. Statistics
+  <a class="reference internal" href="01-linear-algebra/04-eigendecomposition/index.html">
+   4. Eigendecomposition
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="05-algorithms/index.html">
-   5. Algorithms and Data Structures
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="06-optimization/index.html">
-   6. Optimization
+  <a class="reference internal" href="01-linear-algebra/05-matrix-operations-for-ml/index.html">
+   5. Matrix Operations for ML
   </a>
  </li>
 </ul>
@@ -353,8 +353,8 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
-<p>Khi bắt đầu tìm hiểu về Machine Learning, nhiều khóa học và tài liệu tham khảo sẽ yêu cầu người đọc phải có nền tảng về toán học. Tuy nhiên, theo xu hướng phát triển, ngày càng có nhiều công cụ Self-Service Analytics ra đời để hỗ trợ người dùng làm Machine Learning mà không cần biết quá nhiều về Toán.</p>
-<p>Có thể bạn sẽ thắc mắc, vậy thì chúng ta có cần phải học Toán không? Câu trả lời tùy thuộc vào mục tiêu của bạn. Nếu bạn chỉ đơn giản là muốn làm Machine Learning bằng các công cụ Self-Service thì có lẽ không cần. Ngược lại nếu bạn muốn hiểu sâu về các thuật toán, tự triển khai bằng các ngôn ngữ lập trình ví dụ như Python, thì học Toán là cần thiết.</p>
+<p>Khi mới bắt đầu tìm hiểu về Machine Learning, có thể bạn sẽ bắt gặp nhiều khóa học và tài liệu tham khảo yêu cầu người đọc phải có nền tảng về toán học. Tuy nhiên, theo xu hướng phát triển, ngày càng có nhiều công cụ Self-Service Analytics ra đời để hỗ trợ người dùng làm Machine Learning mà không cần biết quá nhiều về Toán.</p>
+<p>Có thể bạn sẽ thắc mắc, vậy thì chúng ta có cần phải học Toán không? Câu trả lời tùy thuộc vào mục tiêu của bạn. Nếu bạn chỉ đơn giản là muốn làm Machine Learning bằng các công cụ Self-Service thì có lẽ không cần. Ngược lại nếu bạn muốn hiểu sâu về các thuật toán và tự triển khai nó bằng các ngôn ngữ lập trình ví dụ như Python, thì học Toán là cần thiết.</p>
 <a class="reference internal image-reference" href="_images/math.png"><img alt="_images/math.png" class="align-center" src="_images/math.png" style="width: 75%;" /></a>
 <p>Quyển sách này, là tổng hợp tất cả ghi chép của mình trong quá trình học Toán từ khóa học <a class="reference external" href="https://learning.oreilly.com/videos/the-essential-machine/9780137903245/">The Essential Machine Learning Foundations: Math, Probability, Statistics, and Computer Science</a> của Jon Krohn.</p>
 <div class="toctree-wrapper compound">
@@ -388,10 +388,10 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="01-linear-algebra/index.html" title="next page">
+    <a class='right-next' id="next-link" href="01-linear-algebra/01-data-structures/index.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">1. </span>Linear Algebra</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Data Structures for Algebra</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
